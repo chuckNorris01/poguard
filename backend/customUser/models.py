@@ -24,7 +24,7 @@ class CustomUserManager(BaseUserManager):
 
         user.is_superuser = True
         user.is_staff = True
-        extra_fields.setdefault('role', 3)
+        extra_fields.setdefault('role', 1)
         user.save()
 
         return user

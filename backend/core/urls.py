@@ -11,5 +11,5 @@ urlpatterns = [
     path('auth/', include('djoser.urls.jwt')),
     path('api/login/', UserLoginView.as_view(), name='login'),
     path('api/poguard/', POGaurdView.as_view(), name='poguard'),
-    path('api/poguard/<int:po_id>/', POGaurdViewDetail.as_view(), name='poguard details'),
+    path('api/poguard/<int:identifier>/', POGaurdViewDetail.as_view(), name='poguard details'),
 ]
